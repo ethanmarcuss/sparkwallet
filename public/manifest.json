@@ -1,0 +1,21 @@
+{
+  "name": "Spark Wallet",
+  "short_name": "SparkWallet",
+  "description": "A PWA wallet for the Spark Bitcoin scaling solution.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfcfc",
+  "theme_color": "#000",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
