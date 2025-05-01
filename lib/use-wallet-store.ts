@@ -641,8 +641,12 @@ export function useWallet() {
           toast.success("Funds Received", {
             description: `Received ${increasedAmount.toLocaleString()} sats`,
           });
+
           // Invalidate transaction list to refresh
-          queryClient.invalidateQueries({ queryKey: ["transactions"] });
+          queryClient.invalidateQueries({
+            queryKey: ["transactions", sparkAddress],
+          });
+
           console.log(
             `Funds received toast shown for ${increasedAmount} sats.`
           );

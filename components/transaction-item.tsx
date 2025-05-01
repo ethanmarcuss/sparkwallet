@@ -1,5 +1,5 @@
 import { formatDistanceToNow } from "date-fns";
-import { ArrowDownLeft, ArrowUpRight, Bitcoin, Zap } from "lucide-react";
+import { ArrowDownLeft, ArrowUpRight, Bitcoin, X, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -35,6 +35,11 @@ export function TransactionItem({
   const isIncoming = direction === "incoming";
 
   const getIcon = () => {
+    // Check for failed status first
+    if (status === "failed") {
+      return <X className="h-5 w-5 text-red-500" />;
+    }
+
     // Icons based on type and direction - seems logical
     if (type === "bitcoin_deposit" || type === "bitcoin_withdrawal") {
       return <Bitcoin className="h-5 w-5" />;
@@ -78,8 +83,7 @@ export function TransactionItem({
     <div
       className={cn(
         "flex items-center justify-between rounded-lg p-3", // Base styling
-        status === "pending" && "opacity-70", // Pending style
-        status === "failed" && "opacity-50" // Failed style
+        status === "pending" && "opacity-70" // Pending style
       )}>
       <Link
         key={id}
@@ -93,7 +97,13 @@ export function TransactionItem({
         {/* Middle: Type and Timestamp */}
         <div className="flex-1 mx-3">
           <p className="font-medium">{getTypeLabel()}</p>
-          <p className="text-xs text-muted-foreground">{formattedTime}</p>
+          <p className="text-xs text-muted-foreground">
+            {status === "failed"
+              ? "Failed"
+              : status === "pending"
+              ? "Pending"
+              : formattedTime}
+          </p>
         </div>
 
         {/* Right side: Amounts */}
