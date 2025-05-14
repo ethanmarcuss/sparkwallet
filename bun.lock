@@ -5,7 +5,7 @@
       "name": "sparkwallet",
       "dependencies": {
         "@builder.io/partytown": "^0.10.3",
-        "@buildonspark/spark-sdk": "^0.1.10",
+        "@buildonspark/spark-sdk": "^0.1.16",
         "@fortawesome/react-fontawesome": "^0.2.2",
         "@number-flow/react": "^0.5.9",
         "@radix-ui/react-avatar": "^1.1.7",
@@ -246,9 +246,9 @@
 
     "@builder.io/partytown": ["@builder.io/partytown@0.10.3", "", { "bin": { "partytown": "bin/partytown.cjs" } }, "sha512-N2SWA3c5vEad3rgdAFM3zMb6uc7aXqibkgAz4ijvYzycgQXJ4dE5oH6fGFMXSQWj6ayVlLT1/CmpflYUJHfmQg=="],
 
-    "@buildonspark/lrc20-sdk": ["@buildonspark/lrc20-sdk@0.0.38", "", { "dependencies": { "@bitcoinerlab/secp256k1": "^1.1.1", "@bufbuild/protobuf": "^2.2.5", "@lightsparkdev/core": "^1.3.0", "@sapphire/utilities": "^3.17.0", "bignumber.js": "^9.1.2", "bitcoinjs-lib": "^6.1.5", "buffer": "^6.0.3", "class-transformer": "^0.5.1", "ecpair": "^2.1.0", "nice-grpc": "^2.1.10", "nice-grpc-client-middleware-retry": "^3.1.10", "nice-grpc-common": "^2.0.2", "nice-grpc-web": "^3.3.5", "stream": "^0.0.3", "ts-proto": "^2.6.1", "varuint-bitcoin": "^1.1.2" } }, "sha512-soLSPLs5dZ46x3dr8RrejsUMm0545n6uu0is6IrWPixlxKY+Xb1zg4+OzooXg6WiF38eRZ8q5fThMsDgEGxPJQ=="],
+    "@buildonspark/lrc20-sdk": ["@buildonspark/lrc20-sdk@0.0.43", "", { "dependencies": { "@bitcoinerlab/secp256k1": "^1.1.1", "@bufbuild/protobuf": "^2.2.5", "@lightsparkdev/core": "^1.3.0", "@sapphire/utilities": "^3.17.0", "bignumber.js": "^9.1.2", "bitcoinjs-lib": "^6.1.5", "buffer": "^6.0.3", "class-transformer": "^0.5.1", "ecpair": "^2.1.0", "nice-grpc": "^2.1.10", "nice-grpc-client-middleware-retry": "^3.1.10", "nice-grpc-common": "^2.0.2", "nice-grpc-web": "^3.3.5", "stream": "^0.0.3", "ts-proto": "^2.6.1", "varuint-bitcoin": "^1.1.2" } }, "sha512-es0heTl0v6FmhlZZ/UiulvVtysi7zESQcgKe6DsuFuLRg3Nd42XuSz2YiHEoo4qNJDoYsk3TBD/C3kezAALPOA=="],
 
-    "@buildonspark/spark-sdk": ["@buildonspark/spark-sdk@0.1.10", "", { "dependencies": { "@bufbuild/protobuf": "^2.2.5", "@buildonspark/lrc20-sdk": "0.0.38", "@lightsparkdev/core": "^1.3.0", "@noble/curves": "^1.8.0", "@noble/hashes": "^1.7.1", "@scure/base": "^1.2.4", "@scure/bip32": "^1.6.2", "@scure/bip39": "^1.5.4", "@scure/btc-signer": "^1.5.0", "async-mutex": "^0.5.0", "bitcoinjs-lib": "^6.1.5", "buffer": "^6.0.3", "eciesjs": "^0.4.13", "eventemitter3": "^5.0.1", "light-bolt11-decoder": "^3.2.0", "nice-grpc": "^2.1.10", "nice-grpc-client-middleware-retry": "^3.1.10", "nice-grpc-common": "^2.0.2", "nice-grpc-web": "^3.3.5", "ts-proto": "^2.6.1" } }, "sha512-M1K7rJd5rOegZpYQZ7n6hIFa3JRQajvgtxaDfggzN+BxqDST1HtajTGpRUdxxi/J7BUWHjtnns7E3kx64QaXtQ=="],
+    "@buildonspark/spark-sdk": ["@buildonspark/spark-sdk@0.1.16", "", { "dependencies": { "@bufbuild/protobuf": "^2.2.5", "@buildonspark/lrc20-sdk": "0.0.43", "@lightsparkdev/core": "^1.3.0", "@noble/curves": "^1.8.0", "@noble/hashes": "^1.7.1", "@scure/base": "^1.2.4", "@scure/bip32": "^1.6.2", "@scure/bip39": "^1.5.4", "@scure/btc-signer": "^1.5.0", "async-mutex": "^0.5.0", "bitcoinjs-lib": "^6.1.5", "buffer": "^6.0.3", "eciesjs": "^0.4.13", "eventemitter3": "^5.0.1", "light-bolt11-decoder": "^3.2.0", "nice-grpc": "^2.1.10", "nice-grpc-client-middleware-retry": "^3.1.10", "nice-grpc-common": "^2.0.2", "nice-grpc-web": "^3.3.5", "ts-proto": "^2.6.1" } }, "sha512-w3k0jNo9ugcF+n2xWPAJr8pCxLaoKMmgvlTeWr9OOaLtbR4DMQcvU/npaVjILVvSA3Hz8BgU/S/oPWp+Z6pvzg=="],
 
     "@ecies/ciphers": ["@ecies/ciphers@0.2.3", "", { "peerDependencies": { "@noble/ciphers": "^1.0.0" } }, "sha512-tapn6XhOueMwht3E2UzY0ZZjYokdaw9XtL9kEyjhQ/Fb9vL9xTFbOaI+fV0AWvTpYu4BNloC6getKW6NtSg4mA=="],
 

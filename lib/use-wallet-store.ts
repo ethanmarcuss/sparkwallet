@@ -19,7 +19,7 @@ import {
 } from "../types/currency";
 import { useMnemonicStore } from "@/lib/use-mnemonic-store";
 import { toast } from "sonner";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 // Add a status type
 type InitializationStatus =
